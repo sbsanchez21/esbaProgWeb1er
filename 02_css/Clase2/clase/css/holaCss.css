@@ -1,0 +1,65 @@
+html {
+    font-size: 16px;
+}
+
+p {
+    background-color: yellow!important;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    animation: fadeIn 2s ease;
+}
+
+/* selectores */
+/* selector de etiqueta */
+input {
+    background-color: blueviolet;
+    border-radius: 20px;
+    border: 0;
+    height: 30px;
+}
+
+
+/* selector clases */
+.titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin: 1.5rem 1rem;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin: 1rem;
+}
+
+.texto {
+    font-size: .9rem;
+    text-align: justify;
+    color: gray;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+/* selector id */
+#anuncio {
+    background-color: #249b341c;
+    border: 0;
+    border-radius: 40px;
+    width: 200px;
+    padding: 2rem;
+}
+
+.fondo {
+    background-image: url("../images/fondo.jpg");
+    padding: 1rem;
+    height: 150px;
+    margin: 2rem 1rem 2rem 1rem;
+}
+

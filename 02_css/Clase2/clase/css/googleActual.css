@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sigmar&display=swap');
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    text-decoration: line-through;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* text-align: end; */
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: .3rem;
+}
+
+.menu img {
+    width: 40px;
+    height: 30px;
+    border-radius: 70px;
+}
+
+.menu img:hover {
+    box-shadow: 0px 0px 10px lightgray;
+}
+
+.logo {
+    text-align: center;
+    margin: 1.5rem 1rem;
+
+}
+
+
+
+.buscador {
+    text-align: center;
+    position: relative;
+
+}
+
+.icono {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+  
+.icono i {
+    font-size: 1.2rem;
+}
+
+.buscador input[type="text"] {
+    border: 1px solid lightgray;
+    width: 50%;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0.3rem 1rem;
+    
+}
+
+.buscador input[type="text"]:hover {
+    box-shadow: 0px 0px 10px lightgray;
+} 
+
+.buscador input[type="submit"] {
+    margin: 2rem .3rem;
+    padding: .7rem 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(246, 243, 243);
+}
+
+.buscador input[type="submit"]:hover {
+    border: 1px solid gray;
+    cursor: pointer;
+}
