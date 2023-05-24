@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- menu -->
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo-urquiza.jpg" alt="esba" width="100" class="mx-1">
+                Conf BsAs
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#oradores">Los Oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lugar y Fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href="comprarTickets.html">Comprar Tickets</a>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- formulario compra  -->
+    <div class="container">
+        <div class="fs-3 my-3 mx-1 text-center">
+            Comprar Tickets
+        </div>
+        <form action="server/server.html" method="post">
+            <div class="row">
+                <div class="col-md mb-3">
+                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="nombre">
+
+                </div>
+                <div class="col-md mb-3">
+                    <input type="text" name="apellido" id="apellido" class="form-control" placeholder="apellido">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="email">
+
+                </div>
+                <div class="col-md mb-3">
+                    <input type="text" name="telefono" id="telefono" class="form-control" placeholder="telefono">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md mb-3">
+                    <input type="number" onkeyup="calcularTotal()"  name="cantEnt" id="cantEnt" class="form-control" placeholder="cantidad de entradas" min="1" max="15">
+                    <small>Valor del ticket $1000</small>
+                </div>
+                <div class="col-md mb-3">
+                    <select class="form-select" onchange="calcularTotal()" name="porcDesc" id="porcDesc">
+                        <option value="50">Estudiante 50% descuento</option>
+                        <option value="30">Profesional 30% descuento</option>
+                        <option value="10">Investigador 10% descuento</option>
+                    </select>
+
+                </div>
+                <div class="col-md mb-3 bg-info p-1 rounded" id="total">
+                    Total a pagar: $0
+                </div>
+            </div>            
+            <div class="row">
+                <input type="submit" value="Comprar" class="btn btn-primary mb-4">
+            </div>
+        </form>
+
+    </div>
+
+    <!-- footer -->
+    <ul class="nav justify-content-center bg-dark text-light">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ">Disabled</a>
+        </li>
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>    
+</body>
+
+</html>
