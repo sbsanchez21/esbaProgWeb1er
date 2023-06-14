@@ -1,0 +1,19 @@
+CREATE INDEX idx_alumnos_nombre
+ON alumnos(nombre)
+
+CREATE UNIQUE INDEX idx_alumnos_dni ON alumnos(dni) 
+
+
+
+SELECT vendedores.id, vendedores.nombre, vendedores.apellido, ventas.producto, ventas.precio, ventas.cant FROM vendedores INNER JOIN ventas ON vendedores.id=ventas.idVendedor WHERE vendedores.id=1 
+
+
+SELECT vendedores.id, vendedores.nombre, vendedores.apellido, ventas.producto, ventas.precio, ventas.cant FROM vendedores INNER JOIN ventas ON vendedores.id=ventas.idVendedor
+ORDER BY vendedores.id
+
+
+SELECT alumnos.id, alumnos.nombre, alumnos.apellido, materias.id, materias.nombre
+FROM (materias INNER JOIN
+		(alumnos INNER JOIN alumnosmaterias ON alumnos.id=alumnosmaterias.idAlumno)
+     ON materias.id=alumnosmaterias.idMateria)
+WHERE alumnos.id=1
