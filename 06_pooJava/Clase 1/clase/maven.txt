@@ -1,0 +1,21 @@
+instalar maven en eclipse:
+help -> install
+work with https://download.eclipse.org/technology/m2e/releases/latest/
+
+
+Crear proyecto maven:
+package explorer -> create project -> maven project
+filter -> webapp
+elegir -> org.apache.maven.archetypes  maven-archetypes-webapp
+colocar cualquier group id y archetypes id
+
+como ver el directorio de código java:
+proyecto click derecho -> properties -> java build path -> order -> maven dependencias
+veremos src/main/java y src/main/test
+
+repositoiro de maven:
+https://mvnrepository.com/
+agregar dependencias java servlet por error en jsp
+Java Servlet API
+
+coliocar dependencias en pom.xml
