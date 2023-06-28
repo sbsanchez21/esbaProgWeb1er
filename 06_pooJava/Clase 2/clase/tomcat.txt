@@ -1,0 +1,11 @@
+Configuración del servet tomcat: sirve para ejecutar jsp
+
+menu windows->show view->other->server (muestra la solapa server)
+click derecho dentro solapa server -> new -> server
+filtrar -> tomcat -> elegir version 10 -> next
+download and install 
+browse (elegir el dir de instalación de tomcat) -> next
+(elegir el proyecto a levantar en el server) -> add
+
+ejecutar jsp:
+click derecho en editor -> run -> run on server
